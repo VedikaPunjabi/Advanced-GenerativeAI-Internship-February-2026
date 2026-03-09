@@ -1,3 +1,5 @@
+# Task 2: FastAPI Assignment
+
 from fastapi import FastAPI, Query
 from typing import List, Optional 
 from pydantic import BaseModel, Field
@@ -312,4 +314,5 @@ def confirm_order_status(order_id: int):
             order["status"] = "confirmed"  # State change
             return {"message": "Order confirmed", "order": order}
             
+
     return {"error": "Order not found"}
