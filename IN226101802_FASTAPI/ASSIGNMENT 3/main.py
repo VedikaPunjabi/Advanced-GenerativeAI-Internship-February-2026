@@ -1,3 +1,5 @@
+# Task 3: FastAPI Assignment
+
 from fastapi import FastAPI, HTTPException, status, Query
 from typing import List, Optional 
 from pydantic import BaseModel, Field
@@ -464,4 +466,5 @@ def delete_product(product_id: int):
     products.remove(product)
     
     # 4. Return success message with the product name
+
     return {"message": f"Product '{product['name']}' deleted"}
